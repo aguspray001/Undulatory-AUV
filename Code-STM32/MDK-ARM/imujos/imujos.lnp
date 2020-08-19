@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"imujos\startup_stm32f103xb.o"
+"imujos\main.o"
+"imujos\stm32f1xx_it.o"
+"imujos\stm32f1xx_hal_msp.o"
+"imujos\imu.o"
+"imujos\stm32f1xx_hal_gpio_ex.o"
+"imujos\stm32f1xx_hal_tim.o"
+"imujos\stm32f1xx_hal_tim_ex.o"
+"imujos\stm32f1xx_hal_uart.o"
+"imujos\stm32f1xx_hal.o"
+"imujos\stm32f1xx_hal_rcc.o"
+"imujos\stm32f1xx_hal_rcc_ex.o"
+"imujos\stm32f1xx_hal_gpio.o"
+"imujos\stm32f1xx_hal_dma.o"
+"imujos\stm32f1xx_hal_cortex.o"
+"imujos\stm32f1xx_hal_pwr.o"
+"imujos\stm32f1xx_hal_flash.o"
+"imujos\stm32f1xx_hal_flash_ex.o"
+"imujos\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "imujos\imujos.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "imujos.map" -o imujos\imujos.axf
